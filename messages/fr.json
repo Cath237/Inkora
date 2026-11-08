@@ -1,0 +1,42 @@
+{
+  "Meta": {
+    "titre": "Inkora — Votre histoire. Notre mission.",
+    "description": "Écrivez. Lisez. Publiez. Gagnez."
+  },
+  "Splash": {
+    "slogan": "Votre histoire. Notre mission.",
+    "devise": "Écrivez. Lisez. Publiez. Gagnez.",
+    "commencer": "Commencer"
+  },
+  "Langue": {
+    "titre": "Choisissez votre langue",
+    "sousTitre": "Sélectionnez la langue que vous souhaitez utiliser sur Inkora",
+    "continuer": "Continuer",
+    "enCours": "Enregistrement…"
+  },
+  "Onboarding": {
+    "bienvenue": "Bienvenue sur Inkora",
+    "plateforme": "La plateforme des auteurs africains",
+    "passer": "Passer",
+    "suivant": "Suivant",
+    "commencer": "Commencer",
+    "allerEcran": "Aller à l’écran {numero}",
+    "slides": {
+      "ecrire": {
+        "alt": "Une écrivaine écrit dans son carnet devant son ordinateur",
+        "titre": "Écrivez votre histoire",
+        "texte": "Publiez facilement vos romans, nouvelles et livres pour des milliers de lecteurs."
+      },
+      "decouvrir": {
+        "alt": "Un lecteur parcourt des livres sur une tablette",
+        "titre": "Découvrez des auteurs africains",
+        "texte": "Lisez gratuitement ou achetez des œuvres originales provenant de tout le continent."
+      },
+      "gagner": {
+        "alt": "Un auteur lève le poing pour fêter ses revenus",
+        "titre": "Publiez, lisez et gagnez de l’argent",
+        "texte": "Inkora permet aux écrivains, maisons d’édition et papeteries de développer leur activité."
+      }
+    }
+  }
+}

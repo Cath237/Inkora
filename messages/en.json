@@ -1,0 +1,42 @@
+{
+  "Meta": {
+    "titre": "Inkora — Your story. Our mission.",
+    "description": "Write. Read. Publish. Earn."
+  },
+  "Splash": {
+    "slogan": "Your story. Our mission.",
+    "devise": "Write. Read. Publish. Earn.",
+    "commencer": "Get started"
+  },
+  "Langue": {
+    "titre": "Choose your language",
+    "sousTitre": "Select the language you want to use on Inkora",
+    "continuer": "Continue",
+    "enCours": "Saving…"
+  },
+  "Onboarding": {
+    "bienvenue": "Welcome to Inkora",
+    "plateforme": "The platform for African authors",
+    "passer": "Skip",
+    "suivant": "Next",
+    "commencer": "Get started",
+    "allerEcran": "Go to screen {numero}",
+    "slides": {
+      "ecrire": {
+        "alt": "A woman writer writing in her notebook in front of her computer",
+        "titre": "Write your story",
+        "texte": "Easily publish your novels, short stories and books for thousands of readers."
+      },
+      "decouvrir": {
+        "alt": "A reader browsing books on a tablet",
+        "titre": "Discover African authors",
+        "texte": "Read for free or buy original works from across the continent."
+      },
+      "gagner": {
+        "alt": "An author raising his fist to celebrate his earnings",
+        "titre": "Publish, read and earn money",
+        "texte": "Inkora helps writers, publishers and stationery shops grow their business."
+      }
+    }
+  }
+}
