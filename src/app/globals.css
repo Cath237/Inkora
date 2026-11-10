@@ -8,6 +8,7 @@
   --color-or: #D4A024;
   --color-or-clair: #E8B84A;
   --color-creme: #F7EFE6;
+  --color-ivoire: #FDFAF3;
   --color-bordure: #EADFD3;
   --color-texte-secondaire: #6B6B6B;
 
@@ -15,7 +16,6 @@
   --color-succes: #2E7D32;
   --color-erreur: #C62828;
   --color-alerte: #ED6C02;
-  --color-ivoire: #FDFAF3;
 
   /* Polices */
   --font-serif: var(--font-playfair), Georgia, serif;
@@ -26,4 +26,101 @@ body {
   background: #ffffff;
   color: #3E1A08;
   font-family: var(--font-sans);
+}
+
+/* ===== Éditeur de chapitres ===== */
+.inkora-editor .ProseMirror {
+  min-height: 60vh;
+  max-width: 40rem; /* largeur de lecture confortable */
+  margin-inline: auto;
+  outline: none;
+  font-family: "Lora Variable", Georgia, serif;
+  font-size: var(--ed-taille, 18px);
+  line-height: var(--ed-interligne, 1.75);
+  color: #3E1A08;
+  overflow-wrap: anywhere;
+}
+
+.inkora-editor .ProseMirror > * + * {
+  margin-top: 0.9em;
+}
+
+.inkora-editor .ProseMirror p {
+  margin: 0;
+}
+
+.inkora-editor .ProseMirror h1,
+.inkora-editor .ProseMirror h2,
+.inkora-editor .ProseMirror h3 {
+  font-weight: 700;
+  line-height: 1.25;
+  color: #6B2D0F;
+}
+.inkora-editor .ProseMirror h1 { font-size: 1.8em; margin-top: 1.6em; }
+.inkora-editor .ProseMirror h2 { font-size: 1.45em; margin-top: 1.4em; }
+.inkora-editor .ProseMirror h3 { font-size: 1.2em; margin-top: 1.2em; }
+
+.inkora-editor .ProseMirror ul,
+.inkora-editor .ProseMirror ol {
+  padding-left: 1.6em;
+}
+.inkora-editor .ProseMirror ul { list-style: disc; }
+.inkora-editor .ProseMirror ol { list-style: decimal; }
+.inkora-editor .ProseMirror li + li { margin-top: 0.3em; }
+
+.inkora-editor .ProseMirror blockquote {
+  margin-left: 0;
+  padding-left: 1rem;
+  border-left: 3px solid #D4A024;
+  color: #6B2D0F;
+  font-style: italic;
+}
+
+/* Séparateur de scène : « * * * » doré */
+.inkora-editor .ProseMirror hr {
+  border: 0;
+  height: 1.5em;
+  margin: 1.5em 0;
+  overflow: visible;
+  background: none;
+}
+.inkora-editor .ProseMirror hr::after {
+  content: "*  *  *";
+  display: block;
+  text-align: center;
+  line-height: 1.5em;
+  letter-spacing: 0.4em;
+  color: #D4A024;
+}
+.inkora-editor .ProseMirror hr.ProseMirror-selectednode {
+  outline: 2px solid #D4A024;
+  border-radius: 0.25rem;
+}
+
+.inkora-editor .ProseMirror img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 1.5rem auto;
+  border-radius: 0.75rem;
+}
+.inkora-editor .ProseMirror img.ProseMirror-selectednode {
+  outline: 3px solid #D4A024;
+}
+
+.inkora-editor .ProseMirror mark {
+  background-color: rgb(232 184 74 / 0.5);
+  color: inherit;
+  border-radius: 0.2em;
+  padding: 0 0.1em;
+}
+
+/* Texte d'invitation quand le chapitre est vide */
+.inkora-editor .ProseMirror p.is-editor-empty:first-child::before {
+  content: attr(data-placeholder);
+  float: left;
+  height: 0;
+  pointer-events: none;
+  color: #6B6B6B;
+  opacity: 0.6;
 }

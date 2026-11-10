@@ -1,0 +1,2 @@
+export const boutonRond =
+  "flex h-10 w-10 items-center justify-center rounded-full border border-bordure bg-white text-marron transition hover:bg-creme focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-or";

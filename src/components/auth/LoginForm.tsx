@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -29,6 +30,7 @@ const schema = z.object({
 type LoginValues = z.infer<typeof schema>;
 
 export default function LoginForm() {
+  const router = useRouter();
   const [message, setMessage] = useState("");
 
   const {
@@ -41,11 +43,11 @@ export default function LoginForm() {
   });
 
   async function onSubmit(values: LoginValues) {
-    // Simulation : la vraie connexion (Auth.js) viendra plus tard
-    await new Promise((resolve) => setTimeout(resolve, 800));
-    console.log("Connexion :", values);
-    setMessage("Formulaire valide ! La vraie connexion viendra avec Auth.js.");
-  }
+  // Simulation : la vraie connexion (Auth.js) viendra plus tard
+  await new Promise((resolve) => setTimeout(resolve, 800));
+  console.log("Connexion :", values);
+  router.push("/accueil");
+}
 
   return (
     <form onSubmit={handleSubmit(onSubmit)} noValidate className="space-y-5">
