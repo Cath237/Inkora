@@ -1,4 +1,5 @@
 import { livres } from "@/lib/mock-data";
+import { profilsExtra } from "../explorer/mock-extra";
 import type {
   AuteurResume,
   LivreCatalogue,
@@ -313,6 +314,7 @@ export const profils: Profil[] = [
       { id: "heritier-des-rois", titre: "L’héritier des rois", genre: "Roman historique", chapitres: 24, statut: "termine", note: 4.3, lectures: 58_000, teinte: "nuit" },
     ],
   }),
+  ...profilsExtra,
 ];
 
 export const trouverProfil = (slug: string) => profils.find((p) => p.slug === slug);
